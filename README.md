@@ -1,219 +1,117 @@
-# 🛍️ Next Mart
+#  BoiMela – Online Bookstore
 
-A modern e-commerce boilerplate built with **Next.js**, **TypeScript**, **Firebase Authentication**, and **shadcn/ui**. This project provides a clean foundation for building scalable e-commerce applications with authentication, protected routes, reusable UI components, and static product data.
-
----
-
-## 🚀 Features
-
-### Authentication
-
-- Firebase Authentication
-- Email & Password Login
-- Email & Password Registration
-- Google Sign-In
-- Protected Routes
-- Authentication Context
-- Logout
-
-### Product Management
-
-- Product Listing
-- Product Details
-- Featured Products Section
-- Static Product Data
-- Responsive Product Cards
-
-### Dashboard
-
-- Protected Dashboard
-- Add Product (Boilerplate)
-- Manage Products (Boilerplate)
-
-### UI
-
-- Responsive Design
-- Light & Dark Mode Ready
-- Built with shadcn/ui
-- Lucide Icons
-- Tailwind CSS
+BoiMela is a modern online bookstore built with **Next.js**, **TypeScript**, **Firebase**, and **Tailwind CSS**. It provides a seamless experience for readers to browse and purchase books while giving administrators full control over book management.
 
 ---
 
-## 🛠 Tech Stack
+## 🌐 Live Demo
+
+> [Click me to visit the site](https://boimela.vercel.app/)
+
+## Home preview
+
+![Home Page](public/boimela.png)
+
+
+---
+
+## ✨ Features
+
+### 👤 User
+
+- User authentication with Firebase
+- Browse all available books
+- Search books by title or author
+- View detailed book information
+- Purchase books
+- Responsive design 
+
+### 👨‍💼 Admin
+
+
+- Add new books
+- Update existing books
+- Delete books
+- Manage book inventory
+
+
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
 
-- Next.js 15 (App Router)
-- React 19
+- Next.js
 - TypeScript
-
-### Styling
-
+- React
 - Tailwind CSS
-- shadcn/ui
-- Lucide React
+- Framer Motion
 
-### Authentication
+### Backend & Authentication
 
 - Firebase Authentication
+- Firebase Firestore
 
-### State Management
+### UI Libraries
 
-- React Context API
+- shadcn/ui
+- Lucide React
+- React Hot Toast
 
 ---
 
-## 📁 Project Structure
+## 📁 Folder Structure
 
-```text
+```
 src
 │
 ├── app
-│   ├── (auth)
-│   │   ├── login
-│   │   └── signup
-│   │
-│   ├── (dashboard)
-│   │   └── dashboard
-│   │       ├── add-product
-│   │       └── manage-products
-│   │
-│   ├── about
-│   ├── products
-│   │   └── [id]
-│   └── api
-│
 ├── components
-│   ├── auth
-│   ├── home
-│   ├── shared
-│   └── ui
-│
-├── data
-│   └── products.ts
-│
-├── firebase
-│
-├── hooks
-│
 ├── providers
-│
+├── lib
+├── hooks
 ├── types
-│
-└── lib
+├── utils
+└── firebase
 ```
 
 ---
 
-## 🔐 Authentication
+## 🚀 Getting Started
 
-Implemented using Firebase Authentication.
-
-### Supported Methods
-
-- Email & Password Login
-- Email & Password Registration
-- Google Authentication
-
-Authentication state is managed globally using **React Context**.
-
----
-
-## 🔒 Protected Routes
-
-The following pages require authentication:
-
-- Product Details
-- Dashboard
-- Add Product
-- Manage Products
-
-Protected routes are implemented using a reusable `ProtectedRoute` component.
-
----
-
-## 📦 Pages
-
-### Public Pages
-
-- Home
-- About
-- Products
-- Login
-- Sign Up
-
-### Protected Pages
-
-- Product Details
-- Dashboard
-- Add Product
-- Manage Products
-
----
-
-## 🛒 Current Features
-
-- Home Hero Section
-- Featured Products
-- Product Grid
-- Product Details
-- Authentication
-- Responsive Layout
-- About Page
-
----
-
-## 🚧 Planned Features
-
-- Shopping Cart
-- Wishlist
-- Checkout
-- Order History
-- User Profile
-- Product Search
-- Product Categories
-- Product Filtering
-- Product Sorting
-- Reviews & Ratings
-- Admin Dashboard
-- Product CRUD
-- Cloud Storage
-- Payment Gateway
-- Backend API Integration
-
----
-
-## ⚙️ Environment Variables
-
-Create a `.env.local` file.
-
-```env
-NEXT_PUBLIC_FIREBASE_API_KEY=
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
-NEXT_PUBLIC_FIREBASE_APP_ID=
-```
-
----
-
-## 📥 Installation
-
-Clone the repository
+### Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/tanvir-22/boimela.git
 ```
 
-Install dependencies
+```bash
+cd boimela
+```
+
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Run the development server
+### Create a `.env.local`
+
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_bucket
+
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+```
+
+### Run locally
 
 ```bash
 npm run dev
@@ -227,41 +125,5 @@ http://localhost:3000
 
 ---
 
-## 📚 Learning Objectives
 
-This project demonstrates:
 
-- Next.js App Router
-- TypeScript
-- Firebase Authentication
-- Protected Routes
-- React Context API
-- Component-Based Architecture
-- Static Data Management
-- Responsive UI Design
-- Reusable Components
-- Modern Folder Structure
-
----
-
-## 🌿 Branches
-
-This repository maintains multiple project variants.
-
-### `main`
-
-Contains the shared boilerplate and common project structure.
-
-### `ecommerce`
-
-Contains the complete e-commerce implementation.
-
-### `event-management`
-
-Contains the event management implementation built on the same foundation.
-
----
-
-## 📄 License
-
-This project is intended for educational and learning purposes.
